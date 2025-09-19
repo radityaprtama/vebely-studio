@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+#services {
+  background: #ecf0f1;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-card {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #3498db;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2980b9;
+}
+footer a, #contact a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+footer a:hover, #contact a:hover {
+  text-decoration: underline;
+}
+header {
+  background: #2c3e50;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;   /* supaya logo & teks sejajar tengah */
+  justify-content: space-between; /* bagi ruang antara kiri & kanan */
+}
+
+.logo {
+  height: 100px;   /* bisa disesuaikan */
+  margin-right: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  flex: 1; /* biar judul dorong menu ke kanan */
+}
+
+nav a {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header img {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  nav ul {
+    gap: 5px;
+  }
+}
